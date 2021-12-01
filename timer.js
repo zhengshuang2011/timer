@@ -7,7 +7,7 @@ const beep = (args) => {
   for (let i = 0; i < args.length; i++) {
     args[i] = Number(args[i]);
     setTimeout(() => {
-      process.stdout.write(`. ${args[i]} seconds \n`);
+      process.stdout.write(`\x07. ${args[i]} seconds \n`);
     }, 1000 * args[i]);
   }
 };
